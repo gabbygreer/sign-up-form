@@ -9,41 +9,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <section id="logo-section">
-        <div>
-            <img src="#" alt="" id="book-logo">
+        <div class="logo-bar">
+            <img src="/assets/images/book-logo.png" alt="" id="book-logo">
             <h1>Novel Escape</h1>
         </div>
     </section>
     <section id="form-section">
-        <p>Welcome to Novel Escape! Join our book subscription service to explore handpicked novels tailored to your tastes. Gain access to exclusive titles, author insights, and member-only perks. Begin your literary journey with us today!</p>
-        <span>Journey into worlds unknown</span>
+        <section class="form-text">
+            <p><strong>This is not a real service!!</strong> Join our book subscription service to explore handpicked novels tailored to your tastes. Gain access to exclusive titles, author insights, and member-only perks. Begin your literary journey with us today!</p>
+            <span>Journey into worlds unknown.</span>
+        </section>
         <form action="" method="">
-            <section id="form-items">
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name">
-
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name">
-
-                <label for="email">EMAIL</label>
-                <input type="email" id="email">
-
-                <label for="phone-number">PHONE NUMBER</label>
-                <input type="tel" id="phone-number">
-
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password">
-
-                <label for="confirtm-password">CONFIRM PASSWORD</label>
-                <input type="password" id="confirtm-password">
-            </section>
+            <h1>Sign up!</h1>
+            <span class="required">* indicates required field.</span>
+            <div class="form-group">
+                <div class="form-item">
+                    <label for="first-name">FIRST NAME *</label>
+                    <input type="text" id="first-name" required>
+                </div>
+                <div class="form-item">
+                    <label for="last-name">LAST NAME *</label>
+                    <input type="text" id="last-name" required>
+                </div>
+            </div>        
+            <div class="form-group">
+                <div class="form-item">
+                    <label for="email">EMAIL *</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-item">
+                    <label for="phone-number">PHONE NUMBER *</label>
+                    <input type="tel" id="phone-number" required>
+                </div>
+            </div>  
+            <div class="form-group">
+                <div class="form-item">
+                    <label for="password">PASSWORD *</label>
+                    <input type="password" id="password" minlength="6" required>
+                </div>
+                <div class="form-item">
+                    <label for="confirm-password">CONFIRM PASSWORD *</label>
+                    <input type="password" id="confirm-password" required>
+                </div>
+            </div>
         </form>
         <section id="submit-section">
-            <button>Create an Account</button>
-        <span>Already have an account? <a href="">>Log in</a</span>
+            <button>Create Account</button>
+        <span>Already have an account? <a href="">Log in</a></span>
         </section>
     </section>
 </body>
