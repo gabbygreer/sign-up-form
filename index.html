@@ -25,7 +25,7 @@
             <p><strong>This is not a real service!!</strong> Join our book subscription service to explore handpicked novels tailored to your tastes. Gain access to exclusive titles, author insights, and member-only perks. Begin your literary journey with us today!</p>
             <span>Journey into worlds unknown.</span>
         </section>
-        <form action="" method="">
+        <form action="" method="POST">
             <h1>Sign up!</h1>
             <span class="required">* indicates required field.</span>
             <div class="form-group">
@@ -56,6 +56,7 @@
                 <div class="form-item">
                     <label for="confirm-password">CONFIRM PASSWORD *</label>
                     <input type="password" id="confirm-password" required>
+                    <div id="password-error"></div>
                 </div>
             </div>
         </form>
@@ -64,5 +65,6 @@
         <span>Already have an account? <a href="">Log in</a></span>
         </section>
     </section>
+    <script src="/main.js"></script>
 </body>
 </html>
